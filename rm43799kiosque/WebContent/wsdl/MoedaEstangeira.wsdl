@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://loja.fiap.com.br" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://loja.fiap.com.br" xmlns:intf="http://loja.fiap.com.br" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://loja.fiap.com.br" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="converterDolar">
+    <complexType>
+     <sequence>
+      <element name="valor" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="converterDolarResponse">
+    <complexType>
+     <sequence>
+      <element name="converterDolarReturn" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="converterDolarRequest">
+
+      <wsdl:part element="impl:converterDolar" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="converterDolarResponse">
+
+      <wsdl:part element="impl:converterDolarResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="MoedaEstangeira">
+
+      <wsdl:operation name="converterDolar">
+
+         <wsdl:input message="impl:converterDolarRequest" name="converterDolarRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:converterDolarResponse" name="converterDolarResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="MoedaEstangeiraSoapBinding" type="impl:MoedaEstangeira">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="converterDolar">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="converterDolarRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="converterDolarResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="MoedaEstangeiraService">
+
+      <wsdl:port binding="impl:MoedaEstangeiraSoapBinding" name="MoedaEstangeira">
+
+         <wsdlsoap:address location="http://localhost:8080/rm43799kiosque/services/MoedaEstangeira"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
