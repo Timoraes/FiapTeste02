@@ -1,0 +1,16 @@
+********************************************************************************
+product = WebSphere Application Server 8.5.5.0 (wlp-1.0.3.20130510-0831)
+wlp.install.dir = C:/opensource/was8/wlp/
+java.home = C:\Program Files\Java\jre7
+java.version = 1.7.0_21
+java.runtime = Java(TM) SE Runtime Environment (1.7.0_21-b11)
+os = Windows 7 (6.1; amd64) (en_US)
+********************************************************************************
+[03/08/13 15:01:40:621 BRT] 00000001 com.ibm.ws.logging.internal.TraceSpecification               I TRAS0018I: The trace state has been changed. The new trace state is *=info.
+[03/08/13 15:01:40:668 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[03/08/13 15:01:41:728 BRT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.304 seconds
+[03/08/13 15:01:41:775 BRT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[03/08/13 15:01:42:430 BRT] 0000001a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[03/08/13 15:01:42:540 BRT] 0000000e com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[03/08/13 15:01:42:587 BRT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 0.857 seconds.
+[03/08/13 15:01:42:587 BRT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
