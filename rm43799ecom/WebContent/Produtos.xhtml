@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://java.sun.com/jsf/html">
+<p:head>
+	<p:body>
+		<p:form>Código do Produto:
+		<p:inputText value="#{p.codProduto}"></p:inputText><br />
+		<br /><br />				
+			<p:commandButton value="#{p.btnPesquisar}" styleClass="button"></p:commandButton><br /><br />Descrição do Produto:
+			<br/><br />
+		<p:outputText value="#{p.descricao}"></p:outputText>
+			<br /><br /><p:graphicImage library="catalogo-produtos" value="#{p.foto}"></p:graphicImage>
+		</p:form>
+	</p:body>
+</p:head>
+</html>
