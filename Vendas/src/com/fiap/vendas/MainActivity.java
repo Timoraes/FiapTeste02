@@ -25,17 +25,22 @@ public class MainActivity extends Activity implements OnClickListener{
 		TextView codProduto = (TextView)findViewById(R.id.txtCodProduto2);
 		TextView descricao = (TextView)findViewById(R.id.txtDescricao);
 		
+		AlertDialog.Builder b = new AlertDialog.Builder(this);
+		
 		if (codProduto.getText().toString().equals("1"))
 		{
 			descricao.setText("Blusa");
+			b.setTitle("10 REAL");
 		}
 		else
 		{
 			descricao.setText("Calca");
+			b.setTitle("20 REAL");
 		}
 		
-		AlertDialog.Builder b = new AlertDialog.Builder(this);
-		b.setTitle("Volte Sempre");
+		
+		
+		b.setMessage("Promoção de liquidação na sexta");
 		b.setPositiveButton("OK", null);
 		b.show();
 	}
